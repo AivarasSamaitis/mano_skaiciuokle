@@ -1,0 +1,123 @@
+body {
+    background-color: #5d75df;
+}
+
+body > div {
+    background-color: #2d43a5;
+    padding: 25px;
+    margin: 49px 50px;
+}
+
+#logo {
+    width: 70px;
+}
+
+.skaiciuokles-header {
+    border: 10px solid rgb(22, 9, 143);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(22, 9, 143), inset 0 0 100px rgb(22, 9, 143);
+}
+
+.skaiciuokles-pavadinimas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35em;
+    color: white;
+}
+
+.skaiciuokles-pavadinimas h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.skaiciuokles-container {
+    background-color: rgb(65, 65, 143);
+    border: 2px solid rgb(22, 9, 143);
+    box-shadow: 0 0 10px rgb(22, 9, 143);
+    border-radius: 20px;
+}
+
+
+.inputs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 11em;
+    height: 3em;
+    font-size: 30px;
+    border: 2px solid rgb(22, 9, 143);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(22, 9, 143), inset 0 0 10px rgb(22, 9, 143);
+    text-align: center;
+    color: black;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input::placeholder {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(175, 173, 173);
+}
+
+.input-2 {
+    margin: 0 0 20px 0;
+}
+
+.result-box {
+    max-height: 120px;
+    overflow-y: scroll;
+    display: block;
+}
+
+.result-box ul {
+    border: 1px solid rgb(22, 9, 143);
+    padding: 10px 10px;
+    margin: 0;
+    background-color: white;
+    color: white;
+    box-shadow: 0 0 10px rgb(22, 9, 143), inset 0 0 250px rgb(22, 9, 143);
+}
+
+.result-box ul li {
+    list-style: none;
+    border: 3px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.result-box ul li:hover {
+    background-color: rgb(137, 131, 179);
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    gap: 30px;
+}
+
+.btn button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(46, 39, 150);
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn button:hover {
+    background-color: rgb(53, 53, 141);
+    box-shadow: 0 0 10px rgb(22, 9, 143);
+}

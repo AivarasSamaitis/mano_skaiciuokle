@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dienpinigių skaičiuoklė</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="skaiciuokles-header">
+        <div class="skaiciuokles-pavadinimas">
+            <h2>Dienpinigių skaičiuoklė</h2>
+            <a href="index.html"><img id="logo" src="logo.png" alt="Logo"></a>
+        </div>
+    </div>
+        <div class="skaiciuokles-container">
+            <div class="inputs-container">
+                <div class="input-box-1">
+                    <div class="input-1">
+                        <input type="text" id="salis" placeholder="Pasirinkite komandiruotės šalį" autocomplete="off">
+                    </div>
+                    <div class="result-box"></div>
+                </div>
+                <div class="input-box-2">
+                    <div class="input-2">
+                        <input type="number" id="tarifas" min="0" step="1" placeholder="Tarifas €">
+                    </div>
+                    <div class="input-3">
+                        <input type="number" id="dienos" min="0" step="1" placeholder="Komandiruočių dienos">
+                    </div>
+                </div>
+                <div class="input-box-3">
+                    <div class="input-4">
+                        <input type="number" id="suma" placeholder="Dienpinigių suma" disabled="true">
+                    </div>
+                </div>
+            </div>
+                <div class="btn">
+                    <button id="skaiciuoti">Skaičiuoti</button>
+                    <button id="delete">Ištrinti</button>
+                </div>
+        </div>
+</body>
+</html>
