@@ -15,6 +15,7 @@ let availableKeywords = [
     'Japonija'
 ]
 
+
 let resultsBox = document.querySelector('.result-box')
 let inputBox = document.getElementById('salis')
 
@@ -39,7 +40,7 @@ function display(result){
         return '<li onclick=pasirinktiInput(this)>' + list + '</li>' 
     })
 
-    resultsBox.innerHTML = '<ul>' + content.join('') + '</ul>'
+    resultsBox.innerHTML = '<ul>' + content.join('<hr>') + '</ul>'
 }
 
 function pasirinktiInput(list) {
@@ -60,9 +61,11 @@ calculateButton.addEventListener('click', function() {
 
     let rezultatas = document.querySelector('.input-4')
         if (Tarifas < 0) {
-            rezultatas.innerHTML = `<input type="text" value="Įvestas neteisingas tarifas." disabled="true">`
+            rezultatas.innerHTML = `<input type="text" value="Klaida!" disabled="true">`
+            alert('Įvestas neteisingas tarifas.')
         } else if (Dienos < 0) {
-            rezultatas.innerHTML = `<input type="text" value="Įvestos neteisingos komandiruočių dienos." disabled="true">`
+            rezultatas.innerHTML = `<input type="text" value="Klaida!" disabled="true">`
+            alert('Įvestos neteisingos komandiruočių dienos.')
         } else {
             rezultatas.innerHTML = `<input type="text" value="${dienpinigiuSuma} €" disabled="true">`
         }
@@ -75,6 +78,14 @@ document.getElementById('delete').addEventListener('click', function() {
     document.querySelector('.input-3').innerHTML = '<input type="number" id="dienos" min="0" step="1" placeholder="Komandiruočių dienos">'
     document.querySelector('.input-4').innerHTML = '<input type="number" id="suma" placeholder="Dienpinigių suma" disabled="true">'
 })
+
+
+document.getElementById('prideti').addEventListener('click', function() {
+    
+})
+
+
+
 
 
 
